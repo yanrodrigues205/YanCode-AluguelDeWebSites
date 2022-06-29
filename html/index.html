@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../css/index-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YanCode© - Shopping</title>
+</head>
+
+<body>
+
+
+    <div id="produtos" class="produtos">
+
+        <div id="produtos-itens" class="produtos-itens">
+
+            <div id="produtos-itens--img" class="produtos-itens--img">
+                <img src="">
+            </div>
+            <center>
+                <div id="produtos-itens--add" class="produtos-itens--add"><a>+</a>
+                </div>
+            </center>
+            <div id="produtos-itens--preco" class="produtos-itens--preco">R$--
+            </div>
+
+            <div id="produtos-itens--nome" class="produtos-itens--nome">--
+            </div>
+
+            <div id="produtos-itens--descricao" class="produtos-itens--descricao">--
+            </div>
+
+        </div>
+
+
+        <div id="carrinho-itens" class="carrinho-itens">
+
+            <img src="">
+            <div id="carrinho-itens--nome" class="carrinho-itens--nome">--</div>
+            <div id="carrinho-itens--tipo" class="carrinho-itens--tipo">--</div>
+
+            <div id="carrinho-itens--qntd" class="carrinho-itens--qntd">
+                <button id="carrinho-itens--mais" class="carrinho-itens--mais">+</button>
+                <div id="carrinho-itens--valor" class="carrinho-itens--valor">1</div>
+                <button id="carrinho-itens--menos" class="carrinho-itens--menos">-</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <header>
+
+        <div id="menu-open" class="menu-open">
+            <span>0</span>
+            <span class="material-icons" id="material-icons"></span>
+        </div>
+        <center>
+            <img src="../img/Yan-logo(white)Nobackground.png" class="logo-mobile" id="logo-mobile">
+        </center>
+    </header>
+
+    <main>
+        <center>
+            <img src="../img/Yan-logo(azul)Nobackground.png" class="logo" id="logo">
+        </center>
+
+        <h1>Web-Sites</h1>
+        <div id="produtos-area" class="produtos-area"></div>
+    </main>
+
+    <aside class="aside">
+
+        <div class="carrinho-area" id="carrinho-area">
+            <div class="menu-close" id="menu-close">
+                <span class="material-icons" id="material-icons">X</span>
+            </div>
+        </div>
+        <center>
+            <h1>Carrinho</h1>
+        </center>
+
+        <div class="carrinho" id="carrinho"></div>
+        <div class="carrinho-detalhes" id="carrinho-detalhes">
+            <div id="carrinho-subtotal" class="carrinho-subtotal">
+                <span>Subtotal</span>
+                <span>R$ --</span>
+            </div>
+
+            <div id="carrinho-desconto" class="carrinho-desconto">
+                <span>Desconto (-5%)</span>
+                <span>R$ --</span>
+            </div>
+
+            <div id="carrinho-total" class="carrinho-total">
+                <span>Total</span>
+                <span>R$ --</span>
+            </div>
+
+          
+            <div id="carrinho-finalizar" class="carrinho-finalizar">
+                Finalizar Compra
+            </div>
+
+        </div>
+
+    </aside>
+
+    <div id="produtoWindowArea" class="produtoWindowArea">
+        <div id="produtoWindowBody" class="produtoWindowBody">
+
+
+            <div id="produtoBig" class="produtoBig">
+                <img src="">
+            </div>
+
+            <div id="produtoInfo" class="produtoInfo">
+
+                <h1>--</h1>
+                <div id="produtoInfo-desc" class="produtoInfo-desc">--</div>
+                <br>
+                <div id="produtoInfo-sizeArea" class="produtoInfo-sizeArea">
+                    <div id="produtoInfo-sector" class="produtoInfo-sector">Resolução</div>
+                    <br>
+                    <div id="produtoInfo-sizes" class="produtoInfo-sizes">
+                        <div data-key="0" id="produtoInfo-size" class="produtoInfo-size "><span>--</span></div>
+                        <div data-key="1" id="produtoInfo-size" class="produtoInfo-size selected"><span>--</span></div>
+                    </div>
+                </div>
+                <br>
+                <div id="produtoInfo-qtdEscrita" class="produtoInfo-qtdEscrita">
+                    Quantidade de Páginas
+
+                </div>
+                <br>
+                <div id="produtoInfo- qtdArea" class="produtoInfo-qtdArea">
+
+                    <button class="produtoInfo-qtdMenos" id="produtoInfo-qtdMenos">-</button>
+                    <div data-key="1" id="produtoInfo-qtd" class="produtoInfo-qtd">1</div>
+                    <button class="produtoInfo-qtdMais" id="produtoInfo-qtdMais">+</button>
+                </div>
+
+                <div id="produtoInfo-precoarea" class="produtoInfo-precoarea">
+                    <div id="produtoInfo--sector" class="produtoInfo--sector">Preço</div>
+                    <div id="produtoInfo-preco" class="produtoInfo-preco">
+                        <div id="produtoInfo--precoAtual" class="produtoInfo--precoAtual">R$ --</div>
+
+                    </div>
+                </div>
+
+                <div class="produtoInfo-addButton">Adicionar ao Carrinho</div>
+                <div class="produtoInfo-cancelButton" onclick="fecharDiv()">Cancelar</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../javascript/produtos.js"></script>
+    <script type="text/javascript" src="../javascript/comandos.js"></script>
+</body>
+
+</html>
